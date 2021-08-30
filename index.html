@@ -15,6 +15,16 @@
   href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
   rel="stylesheet"
 />
+
+<!--LINK JQUERY-->
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<!--PERSONAL SCRIPT JavaScript-->
+<script type="text/javascript">
+   $(function(){
+      alert("My First Jquery Test");
+   });
+</script>
+
 <!-- START NAV -->
 
 <nav id="navbar" class="nav">
@@ -32,6 +42,24 @@
 </nav>
 
 <!-- END NAV -->
+
+<script src="quoteGenerator.js"></script>
+<div class="container">
+  <div class="row py-5">
+    <wrapper id="quote-box">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><div id="text"></div></h5>
+          <p class="card-text"><div id="author"></div></p>
+      <button id="new-quote" class ='btn btn-success' onClick="generateQuote(); ">New Quote</button>
+      <a href='twitterLink' class ='btn btn-primary' target ="_blank" id="tweet-quote">Tweet Quote</a>
+      </div>
+      </div>
+    </wrapper>
+  </div>
+</div> 
+  
+
 
 <!-- START WELCOME SECTION -->
 
